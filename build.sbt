@@ -4,10 +4,12 @@ name := "sbt-maven-settings-credentials"
 enablePlugins(SbtPlugin)
 pluginCrossBuild / sbtVersion := {
   scalaBinaryVersion.value match {
-    case "2.12" => "1.9.9"
+    case "2.12" => "1.3.0"
   }
 }
 
+scalaVersion := "2.12.19"
+scalacOptions ++= Seq("-release", "8")
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
 // Publish config
