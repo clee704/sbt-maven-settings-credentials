@@ -1,6 +1,6 @@
 # How to use
 
-Requirements: SBT 1.3.0 or higher.
+Requirements: SBT 1.9.0 or higher.
 
 Add the following line to `project/plugins.sbt`:
 
