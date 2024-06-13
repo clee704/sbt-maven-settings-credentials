@@ -5,7 +5,7 @@ Requirements: SBT 1.9.0 or higher.
 Add the following line to `project/plugins.sbt`:
 
 ```scala
-addSbtPlugin("dev.chungmin" % "sbt-maven-settings-credentials" % "0.0.2")
+addSbtPlugin("dev.chungmin" % "sbt-maven-settings-credentials" % "0.0.3")
 ```
 
 The plugin will try to find credentials from `~/.m2/settings.xml` for the resolvers defined in `build.sbt`.
