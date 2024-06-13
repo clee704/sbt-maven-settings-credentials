@@ -28,7 +28,7 @@ object MavenSettingsCredentialsPlugin extends AutoPlugin {
   override def trigger = allRequirements
 
   override lazy val projectSettings = Seq(
-    credentials ++= buildCredentials(resolvers.value, streams.value.log)
+    credentials ++= buildCredentials(externalResolvers.value, streams.value.log)
   )
 
   private def buildCredentials(resolvers: Seq[Resolver], log: ManagedLogger): Seq[Credentials] = {
